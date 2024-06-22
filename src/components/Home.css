@@ -1,0 +1,41 @@
+.home {
+  text-align: left;
+}
+
+.hero {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hero h1 {
+  color: #25a342;
+  font-size: 86px;
+  line-height: 5rem;
+  /* letter-spacing: 1.5rem; */
+  margin-top: 1.5%;
+  text-transform: uppercase;
+  /* font-family: 'cocogoose', sans-serif; */
+  font-weight: 900;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.hero h2 {
+  color: #25a342;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hero-paragraph {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 20px;
+  /* margin-bottom: 1%; */
+}
+
+.hero-date-venue {
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+}
