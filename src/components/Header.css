@@ -61,10 +61,7 @@ header span {
   margin-top: 60px;
   width: 100%;
   align-self: center;
-}
-
-.mobile-nav li a {
-  color: #fff;
+    color: #fff;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;

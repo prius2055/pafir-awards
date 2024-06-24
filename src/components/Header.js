@@ -39,64 +39,24 @@ const Header = () => {
           {isMenuOpen && (
             <ul className="mobile-nav">
               <AiOutlineClose className="btn-close" onClick={toggleMenu} />
-              <li className="nav-list">
-                <a href="#home" class="nav-link">
-                  Home
-                </a>
-              </li>
-              <li className="nav-list">
-                <a href="#about" class="nav-link">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-list">
-                <a href="#categories" class="nav-link">
-                  Categories
-                </a>
-              </li>
-              <li className="nav-list">
-                <a href="#sponsorship" class="nav-link">
-                  Sponsorship
-                </a>
-              </li>
-              <li className="nav-list">
-                <a href="#contact" class="nav-link">
-                  Contact
-                </a>
-              </li>
+              <li className="nav-list">Home</li>
+              <li className="nav-list">About Us</li>
+              <li className="nav-list">Categories</li>
+              <li className="nav-list">Sponsorship</li>
+              <li className="nav-list">Contact</li>
             </ul>
           )}
 
           <ul className="desktop-nav">
-            <li className="nav-list">
-              <a href="about.html" class="nav-link current">
-                About
-              </a>
-            </li>
-            <li class="nav-list">
-              <a href="#courses" class="nav-link">
-                Categories
-              </a>
-            </li>
-            <li class="nav-list">
-              <a href="#" class="nav-link">
-                Sponsorship
-              </a>
-            </li>
+            <li className="nav-list">About</li>
+            <li class="nav-list">Categories</li>
+            <li class="nav-list">Sponsorship</li>
 
-            <li className="nav-list">
-              <a href="#" class="nav-link">
-                Contact
-              </a>
-            </li>
+            <li className="nav-list">Contact</li>
           </ul>
         </nav>
 
-        {!isMenuOpen && (
-          <a href="index.html">
-            <img src={Logo} alt="Pafir logo" class="logo" />
-          </a>
-        )}
+        {!isMenuOpen && <img src={Logo} alt="Pafir logo" class="logo" />}
       </header>
     </div>
   );
