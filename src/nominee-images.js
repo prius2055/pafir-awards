@@ -1,22 +1,27 @@
-import lagosStateGorvernnor from '../src/img/governor_sanwoolu.png';
-import directorGeneralWto from '../src/img/ngoziiweala.png';
-import emirOfKano from '../src/img/sanusi-lamido-sanusi.png';
+import lagosStateGorvernnor from '../src/img/nomineeImages/governor_sanwoolu.png';
+import directorGeneralWto from '../src/img/nomineeImages/ngoziiweala.png';
+import emirOfKano from '../src/img/nomineeImages/sanusi-lamido-sanusi.png';
 
-export default Image = [
+const Images = [
   {
-    imageName: 'Sanwo Olu',
+    imageName: 'Gornernor Sanwo Olu',
+    description: 'Executive Governor, Lagos state, Nigeria',
     imageUrl: lagosStateGorvernnor,
     imageAlt: 'Governor Sanwo Olu',
   },
 
   {
-    imageName: 'Ngozi Okonjo-Iweala',
+    imageName: 'Dr Ngozi Okonjo-Iweala',
+    description: 'Director general, WTO',
     imageUrl: directorGeneralWto,
     imageAlt: 'Dr Ngozi Okonjo-Iweala',
   },
   {
-    imageName: 'Lamido Sanusi',
+    imageName: 'HRH Lamido Sanusi',
+    description: 'Emir of Kano',
     imageUrl: emirOfKano,
-    imageAlt: 'Governor Sanwo Olu',
+    imageAlt: 'HRH Lamido Sanusi',
   },
 ];
+
+export default Images;

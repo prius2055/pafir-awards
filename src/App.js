@@ -1,16 +1,14 @@
-import { useState } from 'react';
+import Home from './pages/Home';
+import Category from './pages/Category';
 import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import { useSelector } from 'react-redux';
+import Nominee from './pages/Nominee';
 
 function App() {
-  const isMenuOpen = useSelector((store) => store.isMenuOpen);
-
   return (
     <div className="App">
-      <Header />
       <Home />
+      <Category />
+      <Nominee />
     </div>
   );
 }
