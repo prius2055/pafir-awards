@@ -115,8 +115,6 @@ const Nominate = () => {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#category">Categories</a>
-          <a href="#contact">Sponsorship</a>
-          <a href="#contact">Contact</a>
         </div>
         <p className="copyright"> &copy;PAFIR awards 2024</p>
       </footer>
