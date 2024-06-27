@@ -97,18 +97,13 @@ const Nominate = () => {
         </p>
 
         <div className="contact-icons">
-          <a href="#">
-            <FaFacebook className="icon" />
-          </a>
-          <a href="#">
-            <FaTwitter className="icon" />
-          </a>
-          <a href="#">
-            <FaLinkedin className="icon" />
-          </a>
-          <a href="#">
-            <FaInstagram className="icon" />
-          </a>
+          <FaFacebook className="icon" />
+
+          <FaTwitter className="icon" />
+
+          <FaLinkedin className="icon" />
+
+          <FaInstagram className="icon" />
         </div>
       </div>
       <footer>
