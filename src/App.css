@@ -1,6 +1,8 @@
 .App {
-  text-align: center;
+  position: relative;
+  /* text-align: center; */
   /* background-color: white; */
+  color: #272a31;
 }
 
 /* .App.active {

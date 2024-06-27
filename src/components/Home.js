@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
 import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home">
-      <Header />
+    <div id="home">
       <div className="hero">
         <h2>Welcome to</h2>
         <h1>
@@ -21,9 +19,9 @@ const Home = () => {
         </div>
       </div>
 
-      <button className="hero-btn">Click to nominate</button>
+      <button className="hero-btn">Click here to nominate</button>
 
-      <div className="about-paragraph">
+      <div id="about">
         <p>
           The Pinnacle Awards for Finance, ICT, and Real Estate (PAFIR Awards)
           is an esteemed annual event that celebrates excellence, innovation,

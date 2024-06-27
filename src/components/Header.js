@@ -39,11 +39,38 @@ const Header = () => {
           {isMenuOpen && (
             <ul className="mobile-nav">
               <AiOutlineClose className="btn-close" onClick={toggleMenu} />
-              <li className="nav-list">Home</li>
-              <li className="nav-list">About Us</li>
-              <li className="nav-list">Categories</li>
-              <li className="nav-list">Sponsorship</li>
-              <li className="nav-list">Contact</li>
+
+              <a href="#home">
+                {' '}
+                <li className="nav-list" onClick={toggleMenu}>
+                  Home{' '}
+                </li>
+              </a>
+
+              <a href="#about">
+                <li className="nav-list" onClick={toggleMenu}>
+                  About Us
+                </li>
+              </a>
+
+              <a href="#category">
+                <li className="nav-list" onClick={toggleMenu}>
+                  Categories{' '}
+                </li>
+              </a>
+
+              <a href="#contact">
+                <li className="nav-list" onClick={toggleMenu}>
+                  Sponsorship{' '}
+                </li>
+              </a>
+
+              <a href="#contact">
+                {' '}
+                <li className="nav-list" onClick={toggleMenu}>
+                  Contact{' '}
+                </li>
+              </a>
             </ul>
           )}
 
@@ -59,6 +86,7 @@ const Header = () => {
         {!isMenuOpen && <img src={Logo} alt="Pafir logo" class="logo" />}
       </header>
     </div>
+    // <div>Header</div>
   );
 };
 

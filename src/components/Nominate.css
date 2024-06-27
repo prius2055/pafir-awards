@@ -1,0 +1,120 @@
+.nominee {
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.nominee h2 {
+  text-align: left;
+}
+
+.nominee-card {
+  text-align: left;
+  align-items: center;
+  background: white;
+  margin-bottom: 2%;
+  padding: 5%;
+  border-radius: 2%;
+  border: 3px solid #2774b8;
+}
+
+.nominee-card img {
+  width: 100%;
+}
+
+.nomination-btn {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #2774b8;
+  padding: 2% 4%;
+  /* box-shadow: 0 3px 5px 3px #777; */
+  border: none;
+}
+
+.nomination-steps {
+  margin-bottom: 5%;
+}
+
+.step-card {
+  border: 1px solid #2774b8;
+  padding: 0 2%;
+  margin-bottom: 3%;
+}
+
+.events {
+  margin-top: 5%;
+  border-top: 0.1rem solid #25a342;
+}
+
+.events h2 {
+  margin-bottom: 2%;
+}
+
+.events h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.events p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#contact {
+  background-color: #2774b8;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 15%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-left: -6%;
+  margin-right: -6%;
+  color: white;
+}
+
+.contact-info {
+  margin-bottom: 2%;
+}
+.contact-info span {
+  margin-left: 2%;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  fill: white;
+}
+
+.footer-quote {
+  font-style: italic;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link a {
+  color: #25a342;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 0.1rem solid #25a342;
+  margin-left: -6%;
+  margin-right: -6%;
+  padding-top: 2%;
+  margin-top: 0;
+  margin-bottom: 10%;
+  color: #25a342;
+}

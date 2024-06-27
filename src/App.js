@@ -1,14 +1,16 @@
-import Home from './pages/Home';
-import Category from './pages/Category';
+import Home from './components/Home';
+import Category from './components/Category';
+import Nominate from './components/Nominate';
+import Header from './components/Header';
 import './App.css';
-import Nominee from './pages/Nominee';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Home />
       <Category />
-      {/* <Nominee /> */}
+      <Nominate />
     </div>
   );
 }
