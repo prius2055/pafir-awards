@@ -14,8 +14,10 @@ const Home = () => {
           Pinnacle Awards for Finance, ICT, and Real estate (PAFIR)
         </p>
         <div className="hero-date-venue">
-          <p>18th November, 2024</p>
-          <p>@ Eko Hotels and Suites, Lagos</p>
+          <p>23rd November, 2024</p>
+          <p>
+            @ Oriental Hotel, 3 Lekki-Epe Expressway, Victoria Island, Lagos
+          </p>
         </div>
       </div>
 
