@@ -1,12 +1,12 @@
 import React from 'react';
-import Images from '../nominee-images';
+// import Images from '../nominee-images';
 import './Nominee.css';
 
 const Nominee = () => {
   return (
     <div className="nominee">
       <h2>Meet the Award Nominees</h2>
-      <div className="nominee-grp">
+      {/* <div className="nominee-grp">
         {Images.map((image) => (
           <div className="nominee-card">
             <img src={image.imageUrl} alt={image.imageAlt} />
@@ -16,7 +16,7 @@ const Nominee = () => {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
