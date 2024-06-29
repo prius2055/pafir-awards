@@ -1,0 +1,88 @@
+.nomination-container {
+  background-color: white;
+  height: 100vh;
+  color: #25a342;
+  position: relative;
+}
+
+.nomination {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -20%);
+  width: 90%;
+}
+
+.nomination-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: self-start;
+  font-size: 20px;
+  border: 3px solid #25a342;
+  padding: 2% 4%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 5%;
+}
+
+.form-field {
+  width: 100%;
+  padding: 2%;
+  outline: #25a342;
+  border: 1px solid #25a342;
+  margin-top: 2%;
+}
+
+.name-form-field {
+  width: 97%;
+}
+
+.email-form-field {
+  width: 93%;
+  padding: 1.5% 3%;
+}
+
+.nomination-form button {
+  background-color: #25a342;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #25a342;
+  padding: 1.5% 2.5%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.nomination-form button:hover {
+  background-color: white;
+  color: #25a342;
+}
+
+.confirmation-details {
+  margin-bottom: 10%;
+}
+
+.confirmation-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.confirmation-detail p {
+  color: black;
+  margin-bottom: 0;
+}
+
+.confirmation-detail span {
+  font-style: italic;
+  margin-top: 5%;
+  border-bottom: 1px solid #25a342;
+}

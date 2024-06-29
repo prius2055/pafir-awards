@@ -1,9 +1,10 @@
 import React from 'react';
-import './Home.css';
+import { Link } from 'react-router-dom';
+import './Hero.css';
 
-const Home = () => {
+const Hero = () => {
   return (
-    <div id="home">
+    <div id="hero">
       <div className="hero">
         <h2>Welcome to</h2>
         <h1>
@@ -20,9 +21,9 @@ const Home = () => {
           </p>
         </div>
       </div>
-
-      <button className="hero-btn">Click here to nominate</button>
-
+      <Link to="/nominate" className="hero-btn">
+        Click here to nominate
+      </Link>
       <div id="about">
         <p>
           The Pinnacle Awards for Finance, ICT, and Real Estate (PAFIR Awards)
@@ -38,4 +39,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

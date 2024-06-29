@@ -207,8 +207,8 @@ const Category = () => {
             <p>MD/CEO, Federal Housing Authority</p>
           </div>
           <div className="category-card">
-            <img src={EmomotimiAgama} alt="Mr Emomotimi Agama" />
-            <h3>Mr Emomotimi Agama</h3>
+            <img src={EmomotimiAgama} alt="Dr Emomotimi Agama" />
+            <h3>Dr Emomotimi Agama</h3>
             <p>DG, Security and Exchange Commission</p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-.nominee {
+.process {
   background-color: white;
   padding-left: 5%;
   padding-right: 5%;
@@ -6,23 +6,10 @@
   padding-bottom: 5%;
 }
 
-.nominee h2 {
+.process h2 {
   text-align: left;
 }
 
-.nominee-card {
-  text-align: left;
-  align-items: center;
-  background: white;
-  margin-bottom: 2%;
-  padding: 5%;
-  border-radius: 2%;
-  border: 3px solid #2774b8;
-}
-
-.nominee-card img {
-  width: 100%;
-}
 
 .nomination-btn {
   color: white;
@@ -30,7 +17,7 @@
   font-weight: 400;
   background-color: #2774b8;
   padding: 2% 4%;
-  /* box-shadow: 0 3px 5px 3px #777; */
+  text-decoration: none;
   border: none;
 }
 

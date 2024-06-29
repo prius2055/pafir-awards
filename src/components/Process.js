@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nominate.css';
+import './Process.css';
 import { MdAlternateEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaAddressBook } from 'react-icons/fa';
@@ -7,14 +7,15 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const Nominate = () => {
+const Process = () => {
   return (
-    <div className="nominee">
+    <div className="process">
       <h2>Nomination process</h2>
       <p>
         The Pinnacle Awards for Finance, ICT, and Real Estate (PAFIR Awards)
-        invites nominations from companies and individuals who have demonstrated
+        invites nominations for companies and individuals who have demonstrated
         exceptional performance and innovation in the fields of Finance, ICT and
         Real Estate. The nomination process is designed to be straightforward
         and transparent, ensuring a fair evaluation for all entrants.
@@ -56,7 +57,9 @@ const Nominate = () => {
         </div>
       </div>
 
-      <button className="nomination-btn">Click here to nominate</button>
+      <Link to="/nominate" className="nomination-btn">
+        Click here to nominate
+      </Link>
 
       <div className="events">
         <h2> Event Highlights</h2>
@@ -122,4 +125,4 @@ const Nominate = () => {
   );
 };
 
-export default Nominate;
+export default Process;

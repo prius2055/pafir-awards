@@ -1,16 +1,19 @@
-import Home from './components/Home';
-import Category from './components/Category';
-import Nominate from './components/Nominate';
-import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Nominate from './pages/Nominate';
+import ConfirmationPage from './pages/ConfirmationPage';
+import SuccessPage from './pages/SuccessPage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <Category />
-      <Nominate />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nominate" element={<Nominate />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/success" element={<SuccessPage />} />
+      </Routes>
     </div>
   );
 }
