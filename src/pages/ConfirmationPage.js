@@ -10,6 +10,7 @@ const ConfirmationPage = () => {
   const { state } = useLocation();
   const [details, setDetails] = useState(state);
   const [errorMsg, setErrorMsg] = useState(false);
+  const [duplicateEntryError, setDuplicateEntryError] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -21,11 +22,16 @@ const ConfirmationPage = () => {
       try {
         const result = await dispatch(postNomination(details));
         const { payload } = result;
-        if (payload) {
+
+        if (payload.code === 200) {
           setErrorMsg(false);
           navigate('/success');
+        } else if (payload.code === 400) {
+          setErrorMsg(true);
+          setDuplicateEntryError(payload.msg);
         } else {
-          throw new Error(result.payload);
+          setErrorMsg(false);
+          setDuplicateEntryError(null);
         }
       } catch (error) {
         setErrorMsg(true);
@@ -40,8 +46,21 @@ const ConfirmationPage = () => {
       <img src={Logo} alt="Logo" className="nomination-logo" />
 
       <div className="nomination ">
+        {errorMsg && duplicateEntryError && <Error msg={duplicateEntryError} />}
+        {errorMsg && !duplicateEntryError && (
+          <Error
+            msg={
+              <div>
+                <p>There was an error with processing your entries</p>
+                <p>Kindly fill all the details correctly and re-submit</p>
+                <p>
+                  Email address must be of the format johndoe@domainname.com
+                </p>
+              </div>
+            }
+          />
+        )}
         <h2>Please confirm your entry</h2>
-        {errorMsg && <Error />}
         <form onSubmit={handleSubmission} className="nomination-form">
           <div className="confirmation-details">
             <div className="confirmation-detail">

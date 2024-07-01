@@ -49,9 +49,18 @@ const Nominate = () => {
 
   return (
     <div className="nomination-container">
-      <img src={Logo} alt="Logo" className='nomination-logo'/>
+      <img src={Logo} alt="Logo" className="nomination-logo" />
       <div className="nomination">
-        {error && <Error />}
+        {error && (
+          <Error
+            msg={
+              <div>
+                <p>There was an error with processing your entries</p>
+                <p>Kindly fill all the details correctly and re-submit</p>
+              </div>
+            }
+          />
+        )}
         <h1>Nomination form</h1>
         <form onSubmit={nominationSubmitHandler} className="nomination-form">
           <label htmlFor="name" className="form">
@@ -119,3 +128,5 @@ const Nominate = () => {
 };
 
 export default Nominate;
+
+// {"_id":{"$oid":"668205e812a0a4d367889b55"},"nomineeName":"Okachukwu Iboma","field":"ICT","category":"Rising Star in ICT","userEmail":"prius@mail.com","createdAt":{"$date":{"$numberLong":"1719797224192"}},"updatedAt":{"$date":{"$numberLong":"1719797224192"}},"__v":{"$numberInt":"0"}}

@@ -1,9 +1,9 @@
-import { createSlice, createAsyncThunk, isRejectedWithValue } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const postNomination = createAsyncThunk(
   'post/nomination',
-  async (details) => {
+  async (details, { rejectWithValue }) => {
     try {
       const response = await axios.post(
         `http://localhost:5000/api/nominations`,
@@ -14,13 +14,14 @@ export const postNomination = createAsyncThunk(
           },
         }
       );
-      const nomination = await response.data;
+      const nomination = response.data;
       return nomination;
     } catch (error) {
-        if(error){
-            throw error
-        }
-        return isRejectedWithValue(error.response.data);
+      if (error.response && error.response.data) {
+        return rejectWithValue(error.response.data); // Return the error payload
+      } else {
+        return rejectWithValue({ msg: 'An unexpected error occurred.' });
+      }
     }
   }
 );
@@ -36,35 +37,35 @@ const nominateSlice = createSlice({
   initialState,
   reducers: {},
 
-  //   extraReducers: (builder) => {
-  //     builder
-  //       .addCase(getAllContent.pending, (state) => {
-  //         state.isLoading = true;
-  //         state.loadingError = false;
-  //       })
-  //       .addCase(getAllContent.fulfilled, (state, { payload }) => {
-  //         state.postsArray = payload;
-  //         state.isLoading = false;
-  //         state.loadingError = false;
-  //       })
-  //       .addCase(getAllContent.rejected, (state) => {
-  //         state.loadingError = true;
-  //         state.isLoading = false;
-  //       })
-  //       .addCase(getContent.pending, (state) => {
-  //         state.isLoading = true;
-  //         state.loadingError = false;
-  //       })
-  //       .addCase(getContent.fulfilled, (state, { payload }) => {
-  //         state.post = payload;
-  //         state.isLoading = false;
-  //         state.loadingError = false;
-  //       })
-  //       .addCase(getContent.rejected, (state) => {
-  //         state.loadingError = true;
-  //         state.isLoading = false;
-  //       });
-  //   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(postNomination.pending, (state) => {
+        state.isLoading = true;
+        state.error = false;
+      })
+      .addCase(postNomination.fulfilled, (state, { payload }) => {
+        state.nominationsArray = payload;
+        state.isLoading = false;
+        state.error = null;
+      })
+      .addCase(postNomination.rejected, (state, { payload }) => {
+        state.error = payload;
+        state.isLoading = false;
+      });
+    // .addCase(getContent.pending, (state) => {
+    //   state.isLoading = true;
+    //   state.loadingError = false;
+    // })
+    // .addCase(getContent.fulfilled, (state, { payload }) => {
+    //   state.post = payload;
+    //   state.isLoading = false;
+    //   state.loadingError = false;
+    // })
+    // .addCase(getContent.rejected, (state) => {
+    //   state.loadingError = true;
+    //   state.isLoading = false;
+    // });
+  },
 });
 
 export default nominateSlice.reducer;
