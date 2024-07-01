@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import Nominate from './pages/Nominate';
 import ConfirmationPage from './pages/ConfirmationPage';
 import SuccessPage from './pages/SuccessPage';
+import Admin from './pages/admin/Admin';
+
 import './App.css';
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
         <Route path="/nominate" element={<Nominate />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
         <Route path="/success" element={<SuccessPage />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </div>
   );

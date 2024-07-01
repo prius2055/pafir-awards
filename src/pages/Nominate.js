@@ -2,24 +2,27 @@ import React, { useEffect, useState } from 'react';
 import Fields from '../nomination-fields';
 import { useNavigate } from 'react-router-dom';
 import './Nominate.css';
+import Error from '../components/Error';
+import Logo from '../img/pafir-logo.png';
 
 const Nominate = () => {
   const [nominationDetails, setNominationDetails] = useState({
     nomineeName: '',
-    nominationField: '',
-    nominationCategory: '',
+    field: '',
+    category: '',
     userEmail: '',
   });
   const [categories, setCategories] = useState([]);
+  const [error, setError] = useState(null);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (nominationDetails.nominationField) {
+    if (nominationDetails.field) {
       const selectedField = Fields.find(
         (field) =>
           field.field.toLocaleUpperCase() ===
-          nominationDetails.nominationField.toUpperCase()
+          nominationDetails.field.toUpperCase()
       );
       if (selectedField) {
         setCategories(selectedField.categories);
@@ -27,25 +30,28 @@ const Nominate = () => {
         setCategories([]);
       }
     }
-  }, [nominationDetails.nominationField]);
+  }, [nominationDetails.field]);
 
   const nominationSubmitHandler = (e) => {
     e.preventDefault();
-    console.log(nominationDetails);
     if (
       nominationDetails.nomineeName &&
-      nominationDetails.nominationField &&
-      nominationDetails.nominationCategory
+      nominationDetails.field &&
+      nominationDetails.category
     ) {
       navigate('/confirmation', { state: { ...nominationDetails } });
+      setError(false);
     } else {
       navigate('/nominate');
+      setError(true);
     }
   };
 
   return (
     <div className="nomination-container">
+      <img src={Logo} alt="Logo" className='nomination-logo'/>
       <div className="nomination">
+        {error && <Error />}
         <h1>Nomination form</h1>
         <form onSubmit={nominationSubmitHandler} className="nomination-form">
           <label htmlFor="name" className="form">
@@ -54,6 +60,7 @@ const Nominate = () => {
               type="text"
               placeholder="Enter a name to nominate"
               className="form-field name-form-field"
+              required
               onChange={(e) =>
                 setNominationDetails((prev) => ({
                   ...prev,
@@ -67,10 +74,11 @@ const Nominate = () => {
             <select
               name="field"
               className="form-field"
+              required
               onChange={(e) => {
                 setNominationDetails((prev) => ({
                   ...prev,
-                  nominationField: e.target.value,
+                  field: e.target.value,
                 }));
               }}
             >
@@ -81,16 +89,17 @@ const Nominate = () => {
             </select>
           </label>
 
-          {nominationDetails.nominationField && categories.length > 0 && (
+          {nominationDetails.field && categories.length > 0 && (
             <label htmlFor="category" className="form">
               Category
               <select
                 name="category"
                 className="form-field"
+                required
                 onChange={(e) => {
                   setNominationDetails((prev) => ({
                     ...prev,
-                    nominationCategory: e.target.value,
+                    category: e.target.value,
                   }));
                 }}
               >

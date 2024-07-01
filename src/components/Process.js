@@ -7,6 +7,7 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Process = () => {
@@ -88,7 +89,7 @@ const Process = () => {
           <MdAlternateEmail /> <span>info@pafirawards.ng</span>
         </div>
         <div className="contact-info">
-          <BsFillTelephoneFill /> <span>0803 973 5678</span>
+          <BsFillTelephoneFill /> <span>0802 809 7752</span>
         </div>
         <div className="contact-info">
           <FaAddressBook />
@@ -100,13 +101,19 @@ const Process = () => {
         </p>
 
         <div className="contact-icons">
-          <FaFacebook className="icon" />
+          <a href="https://web.facebook.com/profile.php?id=61561559525104">
+            <FaFacebook className="icon" />
+          </a>
 
-          <FaTwitter className="icon" />
+          <a href="https://x.com/pafirawards">
+            <FaTwitter className="icon" />
+          </a>
 
           <FaLinkedin className="icon" />
 
           <FaInstagram className="icon" />
+
+          <FaWhatsapp className="icon" />
         </div>
       </div>
       <footer>

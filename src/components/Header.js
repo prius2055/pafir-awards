@@ -7,8 +7,6 @@ import { AiOutlineClose } from 'react-icons/ai';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  console.log(isMenuOpen);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -86,7 +84,7 @@ const Header = () => {
         {!isMenuOpen && <img src={Logo} alt="Pafir logo" class="logo" />}
       </header>
     </div>
-    // <div>Header</div>
+   
   );
 };
 
