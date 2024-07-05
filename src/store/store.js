@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import modalReducer from './menuSlice';
+import userReducer from './userSlice';
 import nominateReducer from './nominateSlice';
 const store = configureStore({
   reducer: {
-    menuDisplay: modalReducer,
+    user: userReducer,
     nominations: nominateReducer,
   },
 });

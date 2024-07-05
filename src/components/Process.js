@@ -9,6 +9,9 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
+import { FaCircleInfo } from 'react-icons/fa6';
+import { BiSolidCategoryAlt } from 'react-icons/bi';
 
 const Process = () => {
   return (
@@ -121,13 +124,22 @@ const Process = () => {
           Join us in celebrating excellence, innovation, and leadership at the
           Pinnacle Awards for Finance, ICT, and Real Estate (PAFIR) 2024!
         </p>
-        <div className="footer-link">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#category">Categories</a>
-        </div>
+
         <p className="copyright"> &copy;PAFIR awards 2024</p>
       </footer>
+
+
+      <div className="footer-link">
+        <a href="#home">
+          <FaHome className="footer-icon" />
+        </a>
+        <a href="#about">
+          <FaCircleInfo className="footer-icon" />
+        </a>
+        <a href="#category">
+          <BiSolidCategoryAlt className="footer-icon" />
+        </a>
+      </div>
     </div>
   );
 };

@@ -83,12 +83,24 @@
 }
 
 .footer-link {
+  background-color: #25a342;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  padding: 0.3rem 0.8rem;
+}
+
+.footer-icon {
+  width: 1.5rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-link a {
-  color: #25a342;
+  color: white;
   text-decoration: none;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -101,6 +113,6 @@
   margin-right: -6%;
   padding-top: 2%;
   margin-top: 0;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   color: #25a342;
 }

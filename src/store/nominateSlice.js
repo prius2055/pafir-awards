@@ -26,10 +26,27 @@ export const postNomination = createAsyncThunk(
   }
 );
 
+export const getAllNominations = createAsyncThunk(
+  'get/nominations',
+  async () => {
+    const response = await axios.get(
+      `https://pafir-awards-backend.vercel.app/api/nominations`,
+      {
+        headers: {
+          'content-type': 'application/json',
+        },
+        withCredentials: true,
+      }
+    );
+    const nominations = response.data;
+    return nominations;
+  }
+);
+
 const initialState = {
-  nominationsArray: [],
+  nominationsArray: null,
   isLoading: false,
-  loadingError: false,
+  error: false,
 };
 
 const nominateSlice = createSlice({
@@ -51,20 +68,20 @@ const nominateSlice = createSlice({
       .addCase(postNomination.rejected, (state, { payload }) => {
         state.error = payload;
         state.isLoading = false;
+      })
+      .addCase(getAllNominations.pending, (state) => {
+        state.isLoading = true;
+        state.error = false;
+      })
+      .addCase(getAllNominations.fulfilled, (state, { payload }) => {
+        state.nominationsArray = payload;
+        state.isLoading = false;
+        state.error = false;
+      })
+      .addCase(getAllNominations.rejected, (state, { payload }) => {
+        state.error = true;
+        state.isLoading = false;
       });
-    // .addCase(getContent.pending, (state) => {
-    //   state.isLoading = true;
-    //   state.loadingError = false;
-    // })
-    // .addCase(getContent.fulfilled, (state, { payload }) => {
-    //   state.post = payload;
-    //   state.isLoading = false;
-    //   state.loadingError = false;
-    // })
-    // .addCase(getContent.rejected, (state) => {
-    //   state.loadingError = true;
-    //   state.isLoading = false;
-    // });
   },
 });
 

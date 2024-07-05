@@ -74,17 +74,16 @@ const Header = () => {
 
           <ul className="desktop-nav">
             <li className="nav-list">About</li>
-            <li class="nav-list">Categories</li>
-            <li class="nav-list">Sponsorship</li>
+            <li className="nav-list">Categories</li>
+            <li className="nav-list">Sponsorship</li>
 
             <li className="nav-list">Contact</li>
           </ul>
         </nav>
 
-        {!isMenuOpen && <img src={Logo} alt="Pafir logo" class="logo" />}
+        {!isMenuOpen && <img src={Logo} alt="Pafir logo" className="logo" />}
       </header>
     </div>
-   
   );
 };
 
