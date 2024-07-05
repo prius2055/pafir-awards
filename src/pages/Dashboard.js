@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import Logo from '../img/pafir-logo.png';
 
@@ -8,7 +8,6 @@ import { useNavigate, Link } from 'react-router-dom';
 import './Dashboard.css';
 
 const Dashboard = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isLoading, error, nominationsArray } = useSelector(
     (state) => state.nominations
   );
