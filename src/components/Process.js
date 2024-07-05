@@ -116,7 +116,9 @@ const Process = () => {
 
           <FaInstagram className="icon" />
 
-          <FaWhatsapp className="icon" />
+          <a href="https://wa.me/2348028097752">
+            <FaWhatsapp className="icon" />
+          </a>
         </div>
       </div>
       <footer>
@@ -127,7 +129,6 @@ const Process = () => {
 
         <p className="copyright"> &copy;PAFIR awards 2024</p>
       </footer>
-
 
       <div className="footer-link">
         <a href="#hero">
