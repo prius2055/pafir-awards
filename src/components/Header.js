@@ -5,8 +5,6 @@ import Logo from '../img/pafir-logo.png';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Header = () => {
