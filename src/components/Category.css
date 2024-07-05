@@ -71,3 +71,38 @@ ul .bank-types li {
 .category-card h3 {
   margin-bottom: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .category-grp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .category-card {
+    width: 38%;
+  }
+
+  .special-category {
+    margin-top: 10%;
+  }
+
+  .category-card img {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .nomination-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .step-card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .category-card {
+    width: 20%;
+  }
+}

@@ -20,10 +20,6 @@ header {
   fill: #25a342;
 }
 
-header span {
-  display: none;
-}
-
 .desktop-nav {
   display: none;
 }
@@ -73,3 +69,68 @@ header span {
   color: #fff;
   text-decoration: none;
 }
+
+@media screen and (min-width: 576px) {
+  .logo {
+    margin-left: 62%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .desktop-header {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 10%;
+  }
+
+  .desktop-header {
+    display: flex;
+    background-color: #2774b8;
+    color: white;
+    padding-right: 3%;
+    padding-left: 3%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-header-link {
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .desktop-nav li {
+    list-style: none;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2774b8;
+  }
+
+  .logo {
+    margin-left: 0;
+    height: 6rem;
+  }
+}
+
+

@@ -130,7 +130,7 @@ const Process = () => {
 
 
       <div className="footer-link">
-        <a href="#home">
+        <a href="#hero">
           <FaHome className="footer-icon" />
         </a>
         <a href="#about">

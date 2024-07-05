@@ -3,6 +3,11 @@ import './Header.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import Logo from '../img/pafir-logo.png';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaFacebook } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,22 +18,26 @@ const Header = () => {
 
   return (
     <div className="header">
-      <ul className="desktop-header">
-        <li>
-          <img src="" alt="facebook logo" />
-        </li>
-        <li>
-          <i>
-            <img src="" alt="twitter logo" />
-          </i>
-        </li>
-        <li>
+      <div className="desktop-header">
+        <p>
           <em>Celebrating excellence, honouring greatness</em>
-        </li>
-      </ul>
+        </p>
+        <div className="desktop-header-link">
+          <a href="https://web.facebook.com/profile.php?id=61561559525104">
+            <FaFacebook className="icon" />
+          </a>
+
+          <a href="https://x.com/pafirawards">
+            <FaTwitter className="icon" />
+          </a>
+          <a href="https://wa.me/2348028097752">
+            <FaWhatsapp className="icon" />
+          </a>
+        </div>
+      </div>
 
       <header>
-        <span>AWARDS 2024</span>
+        {!isMenuOpen && <img src={Logo} alt="Pafir logo" className="logo" />}
         <nav>
           {!isMenuOpen && (
             <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
@@ -38,10 +47,9 @@ const Header = () => {
             <ul className="mobile-nav">
               <AiOutlineClose className="btn-close" onClick={toggleMenu} />
 
-              <a href="#home">
-                {' '}
+              <a href="#hero">
                 <li className="nav-list" onClick={toggleMenu}>
-                  Home{' '}
+                  Home
                 </li>
               </a>
 
@@ -73,15 +81,28 @@ const Header = () => {
           )}
 
           <ul className="desktop-nav">
-            <li className="nav-list">About</li>
-            <li className="nav-list">Categories</li>
-            <li className="nav-list">Sponsorship</li>
-
-            <li className="nav-list">Contact</li>
+            <a href="#hero">
+              <li className="nav-list" onClick={toggleMenu}>
+                About
+              </li>
+            </a>
+            <a href="#hero">
+              <li className="nav-list" onClick={toggleMenu}>
+                Categories
+              </li>
+            </a>
+            <a href="#hero">
+              <li className="nav-list" onClick={toggleMenu}>
+                Sponsorship
+              </li>
+            </a>
+            <a href="#hero">
+              <li className="nav-list" onClick={toggleMenu}>
+                Contact
+              </li>
+            </a>
           </ul>
         </nav>
-
-        {!isMenuOpen && <img src={Logo} alt="Pafir logo" className="logo" />}
       </header>
     </div>
   );
