@@ -8,7 +8,6 @@ import { useNavigate, Link } from 'react-router-dom';
 import './Dashboard.css';
 
 const Dashboard = () => {
-  // const { state } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isLoading, error, nominationsArray } = useSelector(
     (state) => state.nominations
@@ -18,13 +17,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     dispatch(getAllNominations());
-    // if (!nominationsArray) {
-    //   navigate('/login');
-    // }
   }, [dispatch]);
-
-  console.log(nominationsArray);
-  // const { nominations } = nominationsArray;
 
   const financeNominations = nominationsArray?.nominations?.filter(
     (nomination) => nomination.field.toLowerCase() === 'finance'
@@ -35,10 +28,6 @@ const Dashboard = () => {
   const estateNominations = nominationsArray?.nominations?.filter(
     (nomination) => nomination.field.toLowerCase() === 'real estate'
   );
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   if (isLoading) {
     return <p>Loading...</p>;
