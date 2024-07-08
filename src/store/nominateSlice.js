@@ -6,7 +6,7 @@ export const postNomination = createAsyncThunk(
   async (details, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `https://pafir-awards-backend.vercel.app/api/nominations`,
+        `https://pafir-awards.onrender.com/api/nominations`,
         details,
         {
           headers: {
@@ -30,7 +30,7 @@ export const getAllNominations = createAsyncThunk(
   'get/nominations',
   async () => {
     const response = await axios.get(
-      `https://pafir-awards-backend.vercel.app/api/nominations`,
+      `https://pafir-awards.onrender.com/api/nominations`,
       {
         headers: {
           'content-type': 'application/json',
