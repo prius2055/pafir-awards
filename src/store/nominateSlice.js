@@ -6,7 +6,7 @@ export const postNomination = createAsyncThunk(
   async (details, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/nominations`,
+        `https://pafir-awards-backend.vercel.app/api/nominations`,
         details,
         {
           headers: {
