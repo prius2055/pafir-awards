@@ -1,5 +1,6 @@
 #hero {
   text-align: left;
+  margin-top: 25%;
 }
 
 .hero {
@@ -11,10 +12,8 @@
   color: #25a342;
   font-size: 86px;
   line-height: 5rem;
-  /* letter-spacing: 1.5rem; */
-  margin-top: 1.5%;
+  margin-top: 1%;
   text-transform: uppercase;
-  /* font-family: 'cocogoose', sans-serif; */
   font-weight: 900;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -24,6 +23,7 @@
   color: #25a342;
   font-size: 40px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .hero-paragraph {
@@ -46,7 +46,6 @@
   font-weight: 400;
   background-color: #2774b8;
   padding: 2% 4%;
-  /* box-shadow: 0 3px 5px 3px #777; */
   border: none;
   margin: 0 5%;
   text-decoration: none;
@@ -54,10 +53,6 @@
 
 #about {
   margin: 5% 0 0 0;
-  /* border: 3px solid white; */
   background-color: white;
-  /* border-radius: 2%; */
-  /* font-size: 24px; */
-
   padding: 3%;
 }

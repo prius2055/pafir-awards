@@ -1,5 +1,9 @@
 .header {
   background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .desktop-header {
@@ -9,8 +13,9 @@
 header {
   display: flex;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  justify-content: space-between;
+  /* padding-left: 5%;
+  padding-right: 5%; */
 }
 
 .hamburger {
@@ -24,18 +29,8 @@ header {
   display: none;
 }
 
-.btn-close {
-  height: 35px;
-  width: 35px;
-  cursor: pointer;
-  fill: white;
-  margin-top: 10%;
-  margin-left: 5%;
-}
-
 .logo {
-  margin-left: 40%;
-  height: 8rem;
+  height: 5rem;
 }
 
 .mobile-nav {
@@ -44,11 +39,21 @@ header {
   flex-direction: column;
   text-align: center;
   height: 100vh;
-  width: 100vw;
+  width: 110vw;
   margin: 0 -5% 0 -5%;
   padding: 0;
   z-index: 100;
+  position: relative;
+}
+
+.btn-close {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  fill: white;
   position: absolute;
+  top: 2.5%;
+  right: 5%;
 }
 
 .mobile-nav li {
@@ -71,8 +76,38 @@ header {
 }
 
 @media screen and (min-width: 576px) {
-  .logo {
-    margin-left: 62%;
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  nav {
+    width: 60%;
+    padding-right: 10%;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-nav li {
+    list-style: none;
+    margin-right: 2%;
+  }
+  .desktop-nav a {
+    text-decoration: none;
+    color: #25a342;
+    font-weight: 400;
+    border-right: 1px solid #25a342;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .desktop-nav a:hover {
+    border-bottom: 1px solid #25a342;
+    padding-bottom: 2%;
   }
 }
 
@@ -132,6 +167,3 @@ header {
     height: 6rem;
   }
 }
-
-
-

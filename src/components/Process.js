@@ -130,7 +130,7 @@ const Process = () => {
         <p className="copyright"> &copy;PAFIR awards 2024</p>
       </footer>
 
-      <div className="footer-link">
+      {/* <div className="footer-link">
         <a href="#hero">
           <FaHome className="footer-icon" />
         </a>
@@ -140,7 +140,7 @@ const Process = () => {
         <a href="#category">
           <BiSolidCategoryAlt className="footer-icon" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

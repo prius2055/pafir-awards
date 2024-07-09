@@ -35,7 +35,11 @@ const Header = () => {
       </div>
 
       <header>
-        {!isMenuOpen && <img src={Logo} alt="Pafir logo" className="logo" />}
+        {!isMenuOpen && (
+          <a href="#hero">
+            <img src={Logo} alt="Pafir logo" className="logo" />
+          </a>
+        )}
         <nav>
           {!isMenuOpen && (
             <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
@@ -59,20 +63,19 @@ const Header = () => {
 
               <a href="#category">
                 <li className="nav-list" onClick={toggleMenu}>
-                  Categories{' '}
+                  Categories
                 </li>
               </a>
 
               <a href="#contact">
                 <li className="nav-list" onClick={toggleMenu}>
-                  Sponsorship{' '}
+                  Sponsorship
                 </li>
               </a>
 
               <a href="#contact">
-                {' '}
                 <li className="nav-list" onClick={toggleMenu}>
-                  Contact{' '}
+                  Contact
                 </li>
               </a>
             </ul>
@@ -80,24 +83,16 @@ const Header = () => {
 
           <ul className="desktop-nav">
             <a href="#hero">
-              <li className="nav-list" onClick={toggleMenu}>
-                About
-              </li>
+              <li className="nav-list">About</li>
             </a>
-            <a href="#hero">
-              <li className="nav-list" onClick={toggleMenu}>
-                Categories
-              </li>
+            <a href="#category">
+              <li className="nav-list">Categories</li>
             </a>
-            <a href="#hero">
-              <li className="nav-list" onClick={toggleMenu}>
-                Sponsorship
-              </li>
+            <a href="#sponsorship">
+              <li className="nav-list">Sponsorship</li>
             </a>
-            <a href="#hero">
-              <li className="nav-list" onClick={toggleMenu}>
-                Contact
-              </li>
+            <a href="#contact">
+              <li className="nav-list">Contact</li>
             </a>
           </ul>
         </nav>
