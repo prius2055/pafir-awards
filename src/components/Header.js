@@ -25,6 +25,7 @@ const Header = () => {
           <a
             href="https://web.facebook.com/profile.php?id=61561559525104"
             target="_blank"
+            rel="noreferrer"
           >
             <FaFacebook className="icon" />
           </a>
