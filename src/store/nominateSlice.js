@@ -12,6 +12,7 @@ export const postNomination = createAsyncThunk(
           headers: {
             'content-type': 'application/json',
           },
+          withCredentials: true,
         }
       );
       const nomination = response.data;
