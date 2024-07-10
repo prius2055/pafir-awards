@@ -106,23 +106,33 @@ const Process = () => {
             <a
               href="https://web.facebook.com/profile.php?id=61561559525104"
               target="_blank"
+              rel="noreferrer"
             >
               <FaFacebook className="icon" />
             </a>
 
-            <a href="https://x.com/pafirawards" target="_blank">
+            <a
+              href="https://x.com/pafirawards"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitter className="icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/pafir-awards-91aa43317/"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin className="icon" />
             </a>
 
             <FaInstagram className="icon" />
 
-            <a href="https://wa.me/2348028097752" target="_blank">
+            <a
+              href="https://wa.me/2348028097752"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaWhatsapp className="icon" />
             </a>
           </div>
