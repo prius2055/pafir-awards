@@ -75,7 +75,7 @@
 .contact-icons {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  width: 100%;
 }
 
 .icon {
@@ -123,6 +123,10 @@
 
   .copyright {
     margin-top: 2%;
+  }
+
+  .contact-icons {
+    width: 50%;
   }
 }
 
