@@ -1,6 +1,6 @@
 #hero {
   text-align: left;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 
 .hero {
@@ -10,7 +10,7 @@
 
 .hero h1 {
   color: #25a342;
-  font-size: 86px;
+  font-size: 84px;
   line-height: 5rem;
   margin-top: 1%;
   text-transform: uppercase;
@@ -54,5 +54,51 @@
 #about {
   margin: 5% 0 0 0;
   background-color: white;
-  padding: 3%;
+  padding: 2% 5%;
+}
+
+@media screen and (min-width: 576px) {
+  .hero h1 {
+    letter-spacing: 1rem;
+    font-size: 86px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .hero h1 {
+    letter-spacing: 1.5rem;
+    line-height: 6rem;
+  }
+
+  .hero-date-venue {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero {
+    margin-top: 17%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    margin-top: 14%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #hero {
+    margin-top: 10%;
+  }
+
+  .hero-date-venue {
+    margin-bottom: 5rem;
+  }
+
+  .hero-btn {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 1.5% 3%;
+  }
 }

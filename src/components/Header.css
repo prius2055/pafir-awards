@@ -14,8 +14,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding-left: 5%;
-  padding-right: 5%; */
+  padding-right: 5%;
 }
 
 .hamburger {
@@ -30,7 +29,7 @@ header {
 }
 
 .logo {
-  height: 5rem;
+  height: 4rem;
 }
 
 .mobile-nav {
@@ -53,7 +52,7 @@ header {
   fill: white;
   position: absolute;
   top: 2.5%;
-  right: 5%;
+  right: 10%;
 }
 
 .mobile-nav li {
@@ -83,6 +82,27 @@ header {
   .hamburger {
     display: none;
   }
+
+  .desktop-header {
+    display: flex;
+    background-color: #2774b8;
+    color: white;
+    padding-right: 4%;
+    padding-left: 4%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .desktop-header p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .desktop-header-link {
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
   nav {
     width: 60%;
     padding-right: 10%;
@@ -109,61 +129,64 @@ header {
     border-bottom: 1px solid #25a342;
     padding-bottom: 2%;
   }
+
+  .desktop-nav a:active {
+    border-bottom: 1px solid #25a342;
+    padding-bottom: 2%;
+    font-weight: 500;
+  }
 }
 
 @media screen and (min-width: 640px) {
   .desktop-header {
-    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 
-  .hamburger {
-    display: none;
+  nav {
+    padding-right: 5%;
   }
+}
 
-  .mobile-nav {
-    display: none;
-  }
-
+@media screen and (min-width: 768px) {
   header {
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 10%;
-  }
-
-  .desktop-header {
-    display: flex;
-    background-color: #2774b8;
-    color: white;
-    padding-right: 3%;
-    padding-left: 3%;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .desktop-header-link {
-    width: 5rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .desktop-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .desktop-nav li {
-    list-style: none;
-  }
-
-  .desktop-nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #2774b8;
+    padding-right: 2%;
   }
 
   .logo {
-    margin-left: 0;
     height: 6rem;
+    margin-left: 5%;
+  }
+
+  .desktop-nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .desktop-nav a {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-nav a {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+
+  .logo {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .desktop-nav a {
+    font-size: 1.8rem;
+  }
+
+   .logo {
+    margin-left: 40%;
   }
 }

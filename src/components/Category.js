@@ -26,7 +26,7 @@ const Category = () => {
         </p>
 
         <div className="category-grp">
-          <div className="category-card">
+          <div className="category-card-2">
             <h3>Real Estate</h3>
 
             <ol>
@@ -69,7 +69,7 @@ const Category = () => {
               </ul>
             </ol>
           </div>
-          <div className="category-card">
+          <div className="category-card-2">
             <h3>ICT</h3>
             <ol>
               <li className="card-item">ICT Innovator of the Year</li>
@@ -106,7 +106,7 @@ const Category = () => {
               </ul>
             </ol>
           </div>
-          <div className="category-card">
+          <div className="category-card-2">
             <h3>Finance</h3>
             <ol>
               <li className="card-item">Financial Innovator of the Year</li>

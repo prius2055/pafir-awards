@@ -6,6 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +31,10 @@ const Header = () => {
           </a>
           <a href="https://wa.me/2348028097752">
             <FaWhatsapp className="icon" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/pafir-awards-91aa43317/">
+            <FaLinkedin className="icon" />
           </a>
         </div>
       </div>

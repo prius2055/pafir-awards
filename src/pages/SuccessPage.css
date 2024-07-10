@@ -35,7 +35,6 @@
   text-align: center;
   background-color: white;
   padding: 2%;
-  /* border: 1px solid red; */
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -64,4 +63,25 @@
   background-color: white;
   color: #25a342;
   border: 1px solid #25a342;
+}
+
+@media screen and (min-width: 576px) {
+  .success-links {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .success {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .success {
+    width: 50%;
+  }
 }

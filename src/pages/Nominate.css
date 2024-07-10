@@ -1,5 +1,6 @@
 .nomination-container {
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
   color: #25a342;
   position: relative;
@@ -12,12 +13,15 @@
   text-align: center;
   transform: translate(-50%, -20%);
   width: 90%;
+  background-color: white;
+  padding: 2%;
+  border: 1px solid transparent;
+  border-radius: 2%;
 }
 
 .nomination-form {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: self-start;
   font-size: 20px;
   border: 3px solid #25a342;
@@ -47,7 +51,7 @@
 
 .email-form-field {
   width: 93%;
-  padding: 1.5% 3%;
+  padding: 2% 4%;
 }
 
 .nomination-form button {
@@ -67,7 +71,7 @@
 }
 
 .confirmation-details {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .confirmation-detail {
@@ -89,4 +93,26 @@
 
 .nomination-logo {
   height: 8rem;
+}
+
+@media screen and (min-width: 576px) {
+  .nomination-form button {
+    margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nomination {
+    width: 70%;
+  }
+
+  .nomination-form button {
+    margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nomination {
+    width: 50%;
+  }
 }

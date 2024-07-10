@@ -3,7 +3,6 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .process h2 {
@@ -69,9 +68,14 @@
   margin-left: 2%;
 }
 
+.contact-cta {
+  margin-top: 3%;
+}
+
 .contact-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 20%;
 }
 
 .icon {
@@ -80,30 +84,6 @@
 
 .footer-quote {
   font-style: italic;
-}
-
-.footer-link {
-  background-color: #25a342;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  right: 0%;
-  padding: 0.3rem 0.8rem;
-}
-
-.footer-icon {
-  width: 1.5rem;
-  height: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.footer-link a {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .copyright {
@@ -128,8 +108,26 @@
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 786px) {
+  .process p {
+    font-size: 1.1rem;
+  }
+
+  #contact {
+    padding-bottom: 3%;
+  }
+
+  .contact-icons {
+    margin-top: 2%;
+  }
+
   .copyright {
-    margin-top: 9%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .process p {
+    font-size: 1.2rem;
   }
 }

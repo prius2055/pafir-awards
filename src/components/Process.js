@@ -9,9 +9,6 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-// import { FaHome } from 'react-icons/fa';
-// import { FaCircleInfo } from 'react-icons/fa6';
-// import { BiSolidCategoryAlt } from 'react-icons/bi';
 
 const Process = () => {
   return (
@@ -98,27 +95,31 @@ const Process = () => {
           <FaAddressBook />
           <span> Address: 44 Obafemi Awolowo Way, Ikeja, Lagos</span>
         </div>
-        <p>
-          Follow us on social media to stay updated on the latest news and
-          announcements
-        </p>
 
-        <div className="contact-icons">
-          <a href="https://web.facebook.com/profile.php?id=61561559525104">
-            <FaFacebook className="icon" />
-          </a>
+        <div className="contact-cta">
+          <p>
+            Follow us on social media to stay updated on the latest news and
+            announcements
+          </p>
 
-          <a href="https://x.com/pafirawards">
-            <FaTwitter className="icon" />
-          </a>
+          <div className="contact-icons">
+            <a href="https://web.facebook.com/profile.php?id=61561559525104">
+              <FaFacebook className="icon" />
+            </a>
 
-          <FaLinkedin className="icon" />
+            <a href="https://x.com/pafirawards">
+              <FaTwitter className="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/pafir-awards-91aa43317/">
+              <FaLinkedin className="icon" />
+            </a>
 
-          <FaInstagram className="icon" />
+            <FaInstagram className="icon" />
 
-          <a href="https://wa.me/2348028097752">
-            <FaWhatsapp className="icon" />
-          </a>
+            <a href="https://wa.me/2348028097752">
+              <FaWhatsapp className="icon" />
+            </a>
+          </div>
         </div>
       </div>
       <footer>
@@ -129,18 +130,6 @@ const Process = () => {
 
         <p className="copyright"> &copy;PAFIR awards 2024</p>
       </footer>
-
-      {/* <div className="footer-link">
-        <a href="#hero">
-          <FaHome className="footer-icon" />
-        </a>
-        <a href="#about">
-          <FaCircleInfo className="footer-icon" />
-        </a>
-        <a href="#category">
-          <BiSolidCategoryAlt className="footer-icon" />
-        </a>
-      </div> */}
     </div>
   );
 };
