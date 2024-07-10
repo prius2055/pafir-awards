@@ -31,7 +31,6 @@ export const userRegister = createAsyncThunk(
   async (details, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        // `http://localhost:5000/api/admin/register`,
         'https://pafir-awards-backend.vercel.app/api/admin/register',
         details,
         {
