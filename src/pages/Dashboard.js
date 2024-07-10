@@ -4,7 +4,7 @@ import Logo from '../img/pafir-logo.png';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllNominations } from '../store/nominateSlice';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -12,7 +12,7 @@ const Dashboard = () => {
     (state) => state.nominations
   );
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(getAllNominations());
