@@ -35,7 +35,6 @@ export const getAllNominations = createAsyncThunk(
         headers: {
           'content-type': 'application/json',
         },
-        withCredentials: true,
       }
     );
     const nominations = response.data;
