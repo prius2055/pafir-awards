@@ -6,7 +6,6 @@ import { FaAddressBook } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -110,7 +109,6 @@ const Process = () => {
             >
               <FaFacebook className="icon" />
             </a>
-
             <a
               href="https://x.com/pafirawards"
               target="_blank"
@@ -125,9 +123,6 @@ const Process = () => {
             >
               <FaLinkedin className="icon" />
             </a>
-
-            <FaInstagram className="icon" />
-
             <a
               href="https://wa.me/2348028097752"
               target="_blank"
