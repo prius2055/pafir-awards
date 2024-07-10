@@ -9,9 +9,9 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaHome } from 'react-icons/fa';
-import { FaCircleInfo } from 'react-icons/fa6';
-import { BiSolidCategoryAlt } from 'react-icons/bi';
+// import { FaHome } from 'react-icons/fa';
+// import { FaCircleInfo } from 'react-icons/fa6';
+// import { BiSolidCategoryAlt } from 'react-icons/bi';
 
 const Process = () => {
   return (
