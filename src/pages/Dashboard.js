@@ -139,9 +139,7 @@ const Dashboard = () => {
                     <td>{finance.category}</td>
                     <td>{finance.userEmail}</td>
                     <td>
-                      {moment(finance.createdAt).format(
-                        'YYYY-MM-DD / HH:mm:ss'
-                      )}
+                      {moment(finance.createdAt).format('LLL')}
                     </td>
                   </tr>
                 ))}
