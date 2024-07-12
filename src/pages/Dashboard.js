@@ -12,7 +12,6 @@ const Dashboard = () => {
     (state) => state.nominations
   );
 
-  
   const componentRef = useRef();
   const dispatch = useDispatch();
   // const navigate = useNavigate();
