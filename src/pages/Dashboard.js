@@ -64,7 +64,7 @@ const Dashboard = () => {
                   <th>Name of nominee</th>
                   <th>Category</th>
                   <th>Nominator's Email</th>
-                  <th>Nomination date/time</th>
+                  <th>Nomination date & time</th>
                 </tr>
               </thead>
               <tbody>
@@ -74,11 +74,7 @@ const Dashboard = () => {
                     <td>{finance.nomineeName}</td>
                     <td>{finance.category}</td>
                     <td>{finance.userEmail}</td>
-                    <td>
-                      {moment(finance.createdAt).format(
-                        'YYYY-MM-DD / HH:mm:ss'
-                      )}
-                    </td>
+                    <td>{moment(finance.createdAt).format('LLL')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -96,7 +92,7 @@ const Dashboard = () => {
                   <th>Name of Nominee</th>
                   <th>Category</th>
                   <th>Nominator's Email</th>
-                  <th>Nomination date/time</th>
+                  <th>Nomination date & time</th>
                 </tr>
               </thead>
               <tbody>
@@ -106,11 +102,7 @@ const Dashboard = () => {
                     <td>{finance.nomineeName}</td>
                     <td>{finance.category}</td>
                     <td>{finance.userEmail}</td>
-                    <td>
-                      {moment(finance.createdAt).format(
-                        'YYYY-MM-DD / HH:mm:ss'
-                      )}
-                    </td>
+                    <td>{moment(finance.createdAt).format('LLL')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -128,7 +120,7 @@ const Dashboard = () => {
                   <th>Name of Nominee</th>
                   <th>Category</th>
                   <th>Nominator's Email</th>
-                  <th>Nomination date / time</th>
+                  <th>Nomination date & time</th>
                 </tr>
               </thead>
               <tbody>
@@ -138,9 +130,7 @@ const Dashboard = () => {
                     <td>{finance.nomineeName}</td>
                     <td>{finance.category}</td>
                     <td>{finance.userEmail}</td>
-                    <td>
-                      {moment(finance.createdAt).format('LLL')}
-                    </td>
+                    <td>{moment(finance.createdAt).format('LLL')}</td>
                   </tr>
                 ))}
               </tbody>
