@@ -57,7 +57,7 @@ const Dashboard = () => {
             <table className="styled-table">
               <thead>
                 <tr className="table-heading">
-                  <th colSpan="4">Finance</th>
+                  <th colSpan="5">Finance</th>
                 </tr>
                 <tr>
                   <th>Sn</th>
@@ -89,7 +89,7 @@ const Dashboard = () => {
             <table className="styled-table">
               <thead>
                 <tr className="table-heading">
-                  <th colSpan="4">ICT</th>
+                  <th colSpan="5">ICT</th>
                 </tr>
                 <tr>
                   <th>Sn</th>
@@ -121,14 +121,14 @@ const Dashboard = () => {
             <table className="styled-table">
               <thead>
                 <tr className="table-heading">
-                  <th colSpan="4">Real estate</th>
+                  <th colSpan="5">Real estate</th>
                 </tr>
                 <tr>
                   <th>Sn</th>
                   <th>Name of Nominee</th>
                   <th>Category</th>
                   <th>Nominator's Email</th>
-                  <th>Nomination date/time</th>
+                  <th>Nomination date / time</th>
                 </tr>
               </thead>
               <tbody>
