@@ -40,3 +40,19 @@
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid #25a342;
 }
+
+.print {
+  background-color: #25a342;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #25a342;
+  padding: 1.5% 2.5%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.print:hover {
+  background-color: white;
+  color: #25a342;
+}
