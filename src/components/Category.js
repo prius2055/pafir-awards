@@ -167,21 +167,6 @@ const Category = () => {
             <p>Executive Governor of Lagos State</p>
           </div>
           <div className="category-card">
-            <img src={Tambuwal} alt="Sen. Aminu Tambuwal" />
-            <h3> Sen. Aminu Tambuwal </h3>
-            <p>Senate Committee on Housing and Urban Development</p>
-          </div>
-          <div className="category-card">
-            <img src={MohamedMusa} alt="Sen. Sani Musa" />
-            <h3>Sen. Sani Musa</h3>
-            <p>Senate Committee on Finance</p>
-          </div>
-          <div className="category-card">
-            <img src={SalisuAfolabi} alt="Sen. Afolabi Salisu" />
-            <h3>Sen. Afolabi Salisu</h3>
-            <p>Senate Committee on ICT Cyber Crimes</p>
-          </div>
-          <div className="category-card">
             <img src={WaleEdun} alt="Mr Wale Edun" />
             <h3>Mr Wale Edun</h3>
             <p>Hon. Minister of Finance</p>
@@ -197,6 +182,27 @@ const Category = () => {
             <p>Hon. Minister of Communications, Innovation & Digital Economy</p>
           </div>
           <div className="category-card">
+            <img src={MohamedMusa} alt="Sen. Sani Musa" />
+            <h3>Sen. Sani Musa</h3>
+            <p>Senate Committee Chairman on Finance</p>
+          </div>
+          <div className="category-card">
+            <img src={Tambuwal} alt="Sen. Aminu Tambuwal" />
+            <h3> Sen. Aminu Tambuwal </h3>
+            <p>Senate Committee Chairman on Housing and Urban Development</p>
+          </div>
+          <div className="category-card">
+            <img src={SalisuAfolabi} alt="Sen. Afolabi Salisu" />
+            <h3>Sen. Afolabi Salisu</h3>
+            <p>Senate Committee Chairman on ICT Cyber Crimes</p>
+          </div>
+          <div className="category-card">
+            <img src={EmomotimiAgama} alt="Dr Emomotimi Agama" />
+            <h3>Dr Emomotimi Agama</h3>
+            <p>DG, Security and Exchange Commission</p>
+          </div>
+
+          <div className="category-card">
             <img src={VincentOlatunji} alt="Dr Vincent O. Olatunji" />
             <h3>Dr Vincent O. Olatunji</h3>
             <p>NC/CEO, Nigeria Data Protection Commission</p>
@@ -205,11 +211,6 @@ const Category = () => {
             <img src={OyetundeOjo} alt="Mr Oyetunde Ojo" />
             <h3>Mr Oyetunde Ojo</h3>
             <p>MD/CEO, Federal Housing Authority</p>
-          </div>
-          <div className="category-card">
-            <img src={EmomotimiAgama} alt="Dr Emomotimi Agama" />
-            <h3>Dr Emomotimi Agama</h3>
-            <p>DG, Security and Exchange Commission</p>
           </div>
         </div>
       </div>
