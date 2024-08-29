@@ -6,7 +6,7 @@ export const userLogin = createAsyncThunk(
   async (details, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `https://pafir-awards-backend.vercel.app/api/admin/login`,
+        `http://localhost:5000/api/login`,
         details,
         {
           headers: {
