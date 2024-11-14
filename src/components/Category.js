@@ -1,15 +1,15 @@
 import React from 'react';
 import './Category.css';
-import SanwoOlu from '../img/nomineeImages/governor_sanwoolu.png';
-import Tambuwal from '../img/nomineeImages/aminu-tambuwa.png';
-import MohamedMusa from '../img/nomineeImages/muhammed-musa.png';
-import SalisuAfolabi from '../img/nomineeImages/salilu-afolabi.png';
-import WaleEdun from '../img/nomineeImages/wale-edun.png';
-import MusaDangiwa from '../img/nomineeImages/dangiwa-musa.png';
-import BosunTijani from '../img/nomineeImages/bosun-tijani.png';
-import VincentOlatunji from '../img/nomineeImages/vincent-olatunji.png';
-import OyetundeOjo from '../img/nomineeImages/oyetunde-ojo.png';
-import EmomotimiAgama from '../img/nomineeImages/emomotimi-agama.png';
+// import SanwoOlu from '../img/nomineeImages/governor_sanwoolu.png';
+// import Tambuwal from '../img/nomineeImages/aminu-tambuwa.png';
+// import MohamedMusa from '../img/nomineeImages/muhammed-musa.png';
+// import SalisuAfolabi from '../img/nomineeImages/salilu-afolabi.png';
+// import WaleEdun from '../img/nomineeImages/wale-edun.png';
+// import MusaDangiwa from '../img/nomineeImages/dangiwa-musa.png';
+// import BosunTijani from '../img/nomineeImages/bosun-tijani.png';
+// import VincentOlatunji from '../img/nomineeImages/vincent-olatunji.png';
+// import OyetundeOjo from '../img/nomineeImages/oyetunde-ojo.png';
+// import EmomotimiAgama from '../img/nomineeImages/emomotimi-agama.png';
 
 const Category = () => {
   return (
@@ -152,7 +152,7 @@ const Category = () => {
           </div>
         </div>
       </div>
-      <div className="special-category">
+      {/* <div className="special-category">
         <h2>Special Award Category</h2>
         <p className="category-paragraph">
           Special Recognition Award for Public Sector Players to honour and
@@ -213,7 +213,7 @@ const Category = () => {
             <p>MD/CEO, Federal Housing Authority</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
