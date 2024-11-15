@@ -152,7 +152,7 @@ const Category = () => {
           </div>
         </div>
       </div>
-      {/* <div className="special-category">
+      <div className="special-category">
         <h2>Special Award Category</h2>
         <p className="category-paragraph">
           Special Recognition Award for Public Sector Players to honour and
@@ -160,7 +160,7 @@ const Category = () => {
           finance, ICT and real estate sectors.
         </p>
 
-        <div className="category-grp">
+        {/* <div className="category-grp">
           <div className="category-card">
             <img src={SanwoOlu} alt="Governor Sanwo Olu" />
             <h3>His Excellency, Babajide Sanwo-Olu, </h3>
@@ -212,8 +212,8 @@ const Category = () => {
             <h3>Mr Oyetunde Ojo</h3>
             <p>MD/CEO, Federal Housing Authority</p>
           </div>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
     </div>
   );
 };
