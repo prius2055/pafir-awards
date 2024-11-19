@@ -1,15 +1,12 @@
 import React from 'react';
 import './Category.css';
-// import SanwoOlu from '../img/nomineeImages/governor_sanwoolu.png';
-// import Tambuwal from '../img/nomineeImages/aminu-tambuwa.png';
-// import MohamedMusa from '../img/nomineeImages/muhammed-musa.png';
-// import SalisuAfolabi from '../img/nomineeImages/salilu-afolabi.png';
-// import WaleEdun from '../img/nomineeImages/wale-edun.png';
-// import MusaDangiwa from '../img/nomineeImages/dangiwa-musa.png';
-// import BosunTijani from '../img/nomineeImages/bosun-tijani.png';
-// import VincentOlatunji from '../img/nomineeImages/vincent-olatunji.png';
-// import OyetundeOjo from '../img/nomineeImages/oyetunde-ojo.png';
-// import EmomotimiAgama from '../img/nomineeImages/emomotimi-agama.png';
+import Ashafa from '../img/nomineeImages/ashafa.png';
+import Sterling from '../img/nomineeImages/sterling.png';
+import Omotoso from '../img/nomineeImages/omotoso.png';
+import Hajara from '../img/nomineeImages/hajara.png';
+import Troy from '../img/nomineeImages/troy.png';
+import Elizabeth from '../img/nomineeImages/elizabeth.png';
+import Babajide from '../img/nomineeImages/babajide.png';
 
 const Category = () => {
   return (
@@ -160,59 +157,51 @@ const Category = () => {
           finance, ICT and real estate sectors.
         </p>
 
-        {/* <div className="category-grp">
+        <div className="category-grp">
           <div className="category-card">
-            <img src={SanwoOlu} alt="Governor Sanwo Olu" />
-            <h3>His Excellency, Babajide Sanwo-Olu, </h3>
-            <p>Executive Governor of Lagos State</p>
+            <img src={Ashafa} alt={`${Ashafa}`} />
+            <h3>SENATOR BAREEHU OLUGBENGA ASHAFA </h3>
+            <p>Fmr. Senator, Federal Republic of Nigeria</p>
           </div>
           <div className="category-card">
-            <img src={WaleEdun} alt="Mr Wale Edun" />
-            <h3>Mr Wale Edun</h3>
-            <p>Hon. Minister of Finance</p>
+            <img src={Sterling} alt={`${Sterling}`} />
+            <h3> (SIR), STERLING ELLIS</h3>
+            <p>ACS, CHARTERED MCSI</p>
           </div>
           <div className="category-card">
-            <img src={MusaDangiwa} alt="Arc. Ahmed Musa Dangiwa" />
-            <h3>Arc. Ahmed Musa Dangiwa</h3>
-            <p>Hon. Minister of Housing and Urban Development</p>
+            <img src={Omotoso} alt={`${Omotoso}`} />
+            <h3>MR KAYODE OMOTOSO</h3>
+            <p>
+              Pioneer Executive Secretary/CEO, Mortgage Banking Association of
+              Nigeria (MBAN)
+            </p>
           </div>
           <div className="category-card">
-            <img src={BosunTijani} alt="Dr Bosun Tijani" />
-            <h3>Dr Bosun Tijani</h3>
-            <p>Hon. Minister of Communications, Innovation & Digital Economy</p>
+            <img src={Hajara} alt={`${Hajara}`} />
+            <h3>BAR. KADIRI, HAJARA AZALEA</h3>
+            <p>LL.B, BL, MBA, CPPPS, MNIM, MNITD</p>
           </div>
           <div className="category-card">
-            <img src={MohamedMusa} alt="Sen. Sani Musa" />
-            <h3>Sen. Sani Musa</h3>
-            <p>Senate Committee Chairman on Finance</p>
+            <img src={Troy} alt={`${Troy}`} />
+            <h3>ANGELA TROY</h3>
+            <p>Founder & CEO, Troy Consulting, </p>
           </div>
           <div className="category-card">
-            <img src={Tambuwal} alt="Sen. Aminu Tambuwal" />
-            <h3> Sen. Aminu Tambuwal </h3>
-            <p>Senate Committee Chairman on Housing and Urban Development</p>
+            <img src={Elizabeth} alt={`${Elizabeth}`} />
+            <h3> MRS ELIZABETH EBI </h3>
+            <p>
+              GMD/CEO, Futureview Financial Services Ltd.
+            </p>
           </div>
           <div className="category-card">
-            <img src={SalisuAfolabi} alt="Sen. Afolabi Salisu" />
-            <h3>Sen. Afolabi Salisu</h3>
-            <p>Senate Committee Chairman on ICT Cyber Crimes</p>
+            <img src={Babajide} alt={`${Babajide}`} />
+            <h3> DEACON DUROJAIYE BABAJIDE JOHN</h3>
+            <p>
+              MD & Founder,Legrande Properties Development
+              Company Limited
+            </p>
           </div>
-          <div className="category-card">
-            <img src={EmomotimiAgama} alt="Dr Emomotimi Agama" />
-            <h3>Dr Emomotimi Agama</h3>
-            <p>DG, Security and Exchange Commission</p>
-          </div>
-
-          <div className="category-card">
-            <img src={VincentOlatunji} alt="Dr Vincent O. Olatunji" />
-            <h3>Dr Vincent O. Olatunji</h3>
-            <p>NC/CEO, Nigeria Data Protection Commission</p>
-          </div>
-          <div className="category-card">
-            <img src={OyetundeOjo} alt="Mr Oyetunde Ojo" />
-            <h3>Mr Oyetunde Ojo</h3>
-            <p>MD/CEO, Federal Housing Authority</p>
-          </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
