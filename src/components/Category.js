@@ -14,6 +14,56 @@ const Category = () => {
       <h2>Award Categories</h2>
       <hr />
 
+      <div className="special-category">
+        <h2>Special Award Category</h2>
+        <p className="category-paragraph">
+          Special Recognition Award for Public Sector Players to honour and
+          recognise public sector entities contributing significantly to the
+          finance, ICT and real estate sectors.
+        </p>
+
+        <div className="category-grp">
+          <div className="category-card">
+            <img src={Ashafa} alt={`${Ashafa}`} />
+            <h3>SENATOR BAREEHU OLUGBENGA ASHAFA </h3>
+            <p>Fmr. Senator, Federal Republic of Nigeria</p>
+          </div>
+          <div className="category-card">
+            <img src={Sterling} alt={`${Sterling}`} />
+            <h3> (SIR), STERLING ELLIS</h3>
+            <p>ACS, CHARTERED MCSI</p>
+          </div>
+          <div className="category-card">
+            <img src={Omotoso} alt={`${Omotoso}`} />
+            <h3>MR KAYODE OMOTOSO</h3>
+            <p>
+              Pioneer Executive Secretary/CEO, Mortgage Banking Association of
+              Nigeria (MBAN)
+            </p>
+          </div>
+          <div className="category-card">
+            <img src={Hajara} alt={`${Hajara}`} />
+            <h3>BAR. KADIRI, HAJARA AZALEA</h3>
+            <p>LL.B, BL, MBA, CPPPS, MNIM, MNITD</p>
+          </div>
+          <div className="category-card">
+            <img src={Troy} alt={`${Troy}`} />
+            <h3>ANGELA TROY</h3>
+            <p>Founder & CEO, Troy Consulting, </p>
+          </div>
+          <div className="category-card">
+            <img src={Elizabeth} alt={`${Elizabeth}`} />
+            <h3> MRS ELIZABETH EBI </h3>
+            <p>GMD/CEO, Futureview Financial Services Ltd.</p>
+          </div>
+          <div className="category-card">
+            <img src={Babajide} alt={`${Babajide}`} />
+            <h3> DEACON DUROJAIYE BABAJIDE JOHN</h3>
+            <p>MD & Founder,Legrande Properties Development Company Limited</p>
+          </div>
+        </div>
+      </div>
+
       <div className="professional-category">
         <h2>Professional Award Category</h2>
         <p className="category-paragraph">
@@ -146,60 +196,6 @@ const Category = () => {
                 </li>
               </ul>
             </ol>
-          </div>
-        </div>
-      </div>
-      <div className="special-category">
-        <h2>Special Award Category</h2>
-        <p className="category-paragraph">
-          Special Recognition Award for Public Sector Players to honour and
-          recognise public sector entities contributing significantly to the
-          finance, ICT and real estate sectors.
-        </p>
-
-        <div className="category-grp">
-          <div className="category-card">
-            <img src={Ashafa} alt={`${Ashafa}`} />
-            <h3>SENATOR BAREEHU OLUGBENGA ASHAFA </h3>
-            <p>Fmr. Senator, Federal Republic of Nigeria</p>
-          </div>
-          <div className="category-card">
-            <img src={Sterling} alt={`${Sterling}`} />
-            <h3> (SIR), STERLING ELLIS</h3>
-            <p>ACS, CHARTERED MCSI</p>
-          </div>
-          <div className="category-card">
-            <img src={Omotoso} alt={`${Omotoso}`} />
-            <h3>MR KAYODE OMOTOSO</h3>
-            <p>
-              Pioneer Executive Secretary/CEO, Mortgage Banking Association of
-              Nigeria (MBAN)
-            </p>
-          </div>
-          <div className="category-card">
-            <img src={Hajara} alt={`${Hajara}`} />
-            <h3>BAR. KADIRI, HAJARA AZALEA</h3>
-            <p>LL.B, BL, MBA, CPPPS, MNIM, MNITD</p>
-          </div>
-          <div className="category-card">
-            <img src={Troy} alt={`${Troy}`} />
-            <h3>ANGELA TROY</h3>
-            <p>Founder & CEO, Troy Consulting, </p>
-          </div>
-          <div className="category-card">
-            <img src={Elizabeth} alt={`${Elizabeth}`} />
-            <h3> MRS ELIZABETH EBI </h3>
-            <p>
-              GMD/CEO, Futureview Financial Services Ltd.
-            </p>
-          </div>
-          <div className="category-card">
-            <img src={Babajide} alt={`${Babajide}`} />
-            <h3> DEACON DUROJAIYE BABAJIDE JOHN</h3>
-            <p>
-              MD & Founder,Legrande Properties Development
-              Company Limited
-            </p>
           </div>
         </div>
       </div>
